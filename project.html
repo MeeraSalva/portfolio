@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+ body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #2e001c, #7a1f48);
+      height: 100vh;
+    }
+ .navbar {
+      width: 100%;
+      height: 10%;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      backdrop-filter: blur(10px);
+    }
+.navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      font-size: 14px;
+      transition: color 0.3s;
+      margin-top: 13PX;
+    }
+.navbar a:hover {
+      color: #ffb3d1;
+    }
+.portfolio {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+    z-index: 1000;
+    margin-top: 15px;
+}
+.grid-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+  margin-left: 300px;
+  margin-top: 200px;
+  
+}
+.grid-skills div {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  font-weight: bold;
+  color: #333;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: 0.3s;
+  height: 200px;
+  padding-top: 80px;
+  
+  width: 150px;
+
+}
+.grid-skills div:hover {
+  background-color: #21f3e2;
+  color: white;
+  transform: translateY(-5px);
+}
+.a{
+    color:rgb(0, 195, 202);;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    top: 90px;
+  }
+</style>
+</head>
+<body>
+   <div class="portfolio"> MY PORTFOLIO</div>
+  <div class="navbar">
+    <a href="home.html">🏠︎ Home</a>
+    <a href="skill.html">👤Sklills</a>
+    <a href="project.html">💻 Projects</a>
+    <a href="contact.html">☎ About me</a>
+    <a href="contactme.html">📩 Contact me</a>
+  </div>
+<section class="about-container">
+  <div class="about-card">
+    <h2 class="a">My Projects</h2>
+     <div class="grid-skills">
+      <div>Quizz Bites</div>
+      <div>Flipkart Clone Page</div>
+      <div>Portfolio</div>
+      <div>Weather app</div>
+      <div>Todo list</div>
+      
+  </div>
+  </div>
+</section>
+</body>
+</html>
